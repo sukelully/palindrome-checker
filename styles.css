@@ -95,6 +95,7 @@ h1 {
 #result {
     margin-top: 3em;
     display: none;
+    font-size: 1.3rem;
 }
 
 .info-container {
