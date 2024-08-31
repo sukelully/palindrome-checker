@@ -17,6 +17,10 @@ body {
     font-family: "Playfair Display", serif;
 }
 
+p, button {
+    font-size: 1.1rem;
+}
+
 .container {
     position: absolute;
     left: 0;
@@ -68,11 +72,11 @@ h1 {
     gap: 0.5em;
 }
 
-input {
+#check-btn, #text-input {
     font-family: "Playfair Display", serif;
 }
 
-input[type="submit"] {
+#check-btn {
     flex-grow: 1;
     background-color: var(--purple);
     color: white;
@@ -81,11 +85,16 @@ input[type="submit"] {
     border-radius: 15px;
 }
 
-input[type=text] {
+#text-input {
     flex-grow: 3;
     border: transparent;
     font-size: 1rem;
     border-bottom: 2px solid var(--purple);
+}
+
+#result {
+    margin-top: 3em;
+    display: none;
 }
 
 .info-container {
