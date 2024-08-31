@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --dark-blue: #0a0a23;
+    --purple: #5a01a7;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,15 +12,78 @@ html, body {
 }
 
 body {
-    background-color: #0a0a23;
+    background-color: var(--dark-blue);
+    font-family: "Playfair Display", serif;
 }
 
 .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
 }
 
 .container *  {
     color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 3px 3px var(--purple);
+    font-size: 3rem;
+}
+
+.form-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 3em;
+    border-radius: 15px;
+    border-bottom: 5px solid var(--purple);
+}
+
+.form-container * {
+    color: var(--dark-blue);
+    border: transparent;
+}
+
+form { 
+    width: 500px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 1em;
+    gap: 0.5em;
+}
+
+.input-container * {
+    /* border: 1px solid var(--dark-blue) */
+}
+
+input {
+    font-family: "Playfair Display", serif;
+}
+
+input[type="submit"] {
+    flex-grow: 1;
+    background-color: var(--purple);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    flex-grow: 3;
+    border: transparent;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--purple);
 }
